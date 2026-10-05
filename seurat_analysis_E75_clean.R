@@ -14,7 +14,6 @@ library(svglite)
 set.seed(42)
 
 WORKING_DIR <- "<enter your working directory here>"
-WORKING_DIR <- "~/Alejandro/SEURAT/GITHUB/"
 setwd(WORKING_DIR)
 
 ## Defines my_colors 
