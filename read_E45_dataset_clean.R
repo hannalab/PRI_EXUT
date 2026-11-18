@@ -42,9 +42,9 @@ groups <- as.integer(str_extract(colnames(T24_48_72.seurat), "\\d+$"))
 table(groups)
 # Capture condition label per cell
 ct_map <- c(
-  "1" = "SEM_24h",
-  "2" = "SEM_48h",
-  "3" = "SEM_72h"
+  "1" = "PRI_E45_24h",
+  "2" = "PRI_E45_48h",
+  "3" = "PRI_E45_72h"
 )
 
 ct <- ct_map[as.character(groups)]
