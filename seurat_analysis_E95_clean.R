@@ -2,7 +2,7 @@
 # E9.5 single-cell RNA-seq: figures
 #
 # Written by Dr. Noa Novershtern
-# https://github.com/hannalab/Mouse_ExUt
+# https://github.com/hannalab/PRI_EXUT
 #
 # Tested with R 4.3.1 and Seurat v5.
 # =============================================================================
