@@ -96,7 +96,7 @@ sc_df$dataset <- combined$dataset
 sc_df$celltype <- combined$celltype
 
 # One colour per sample
-my_colors = c("pink","purple","blue","brown3","orange","orange3","brown1","yellow","green","darkgreen")
+my_colors = c("pink","purple","blue","brown3","orange","orange3","yellow","green","darkgreen","brown1")
 
 # Figure 1-i 
 ggplot(sc_df, aes(UMAP_1, UMAP_2)) +
