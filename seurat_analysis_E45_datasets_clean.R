@@ -134,4 +134,4 @@ table(combined$celltype2, combined$seurat_clusters)  # sanity check
 # ---- Save results ----
 metadata <- combined@meta.data[c("sample","dataset","celltype2","seurat_clusters")]
 saveRDS(combined,"data/combined_pei_bedzhov_yilmaz.rds")
-write.csv(metadata,"data/pei_yilmaz_bedzhov_meta.csv")
+write.csv(metadata,"data/pei_bedzhov_yilmaz_meta.csv")
