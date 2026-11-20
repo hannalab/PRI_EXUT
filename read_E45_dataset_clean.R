@@ -56,7 +56,7 @@ cat("Cell counts per capture:\n"); print(table(T24_48_72.seurat$sample))
 # ── QC filtering ──────────────────────────────────────────────────────────────
 T24_48_72.seurat[["percent.mt"]] <- PercentageFeatureSet(T24_48_72.seurat, pattern = "^mt-")
 
-# Keep cells with 2,000–8,000 detected genes and < 5 % mitochondrial reads
+# Keep cells with 500–8,000 detected genes and < 10 % mitochondrial reads
 T24_48_72.sub <- subset(
   T24_48_72.seurat,
   subset = nFeature_RNA > 500 & nFeature_RNA < 8000 & percent.mt < 10
