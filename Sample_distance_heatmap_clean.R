@@ -24,7 +24,7 @@ set.seed(42)
 
 combined <- readRDS("data/combined_pei_bedzhov_yilmaz.rds")
 combined_meta <- read.csv(
-  "data/pei_yilmaz_bedzhov_meta.csv",
+  "data/pei_bedzhov_yilmaz_meta.csv",
   row.names = 1,           # assumes first column is the cell barcode
   stringsAsFactors = FALSE
 )
