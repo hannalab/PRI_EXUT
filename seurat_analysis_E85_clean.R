@@ -63,7 +63,7 @@ ggsave("E85_clustree.svg", p, device = svglite, width = 10, height = 10)
 
 # ---- Marker dot plot (main figure) ------------------------------------------
 
-cluster_mapping <- read.csv("E85.cluster_order.list", sep = "\t",
+cluster_mapping <- read.csv("E85_order.list", sep = "\t",
                             header = TRUE, stringsAsFactors = FALSE)
 order_map <- setNames(cluster_mapping$order, cluster_mapping$seurat_cluster)
 E85$order <- unname(order_map[as.character(E85$seurat_clusters)])
