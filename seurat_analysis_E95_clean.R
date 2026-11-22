@@ -18,7 +18,7 @@ library(svglite)
 source("E95_colors.R")
 
 # ---- Load data --------------------------------------------------------------
-E95 <- readRDS("combined_E95_dataset.rds")
+E95 <- readRDS("data/combined_E95_dataset.rds")
 
 # Clusters at resolution 0.3 are used throughout
 E95$seurat_clusters <- E95$integrated_snn_res.0.3
