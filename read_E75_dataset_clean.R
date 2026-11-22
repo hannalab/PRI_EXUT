@@ -70,6 +70,6 @@ combined <- FindNeighbors(combined, reduction = "pca", dims = dims)
 combined <- FindClusters(combined, resolution = seq(0, 1.2, 0.1))
 
 ## ---- Save -------------------------------------------------------------------
-saveRDS(combined, file = "combined_E75_dataset.rds")
+saveRDS(combined, file = "data/combined_E75_dataset.rds")
 
 sessionInfo()
