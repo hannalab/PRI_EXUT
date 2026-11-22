@@ -20,7 +20,7 @@ set.seed(42)
 source("E85_colors.R")
 
 # ---- Load data --------------------------------------------------------------
-input_rds  <- "combined_E85_dataset.rds"
+input_rds  <- "data/combined_E85_dataset.rds"
 E85 <- readRDS(input_rds)
 
 
