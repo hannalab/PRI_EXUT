@@ -10,7 +10,7 @@ set.seed(42)
 
 # ---- Paths (edit to your environment) ---------------------------------------
 DATA_DIR <- "<path>/E85/outs/count/filtered_feature_bc_matrix/"
-OUTPUT_FILE <- "combined_E85_dataset.rds"
+OUTPUT_FILE <- "data/combined_E85_dataset.rds"
 source("E85_colors.R")
 
 # ---- Load data and QC filtering ---------------------------------------------
