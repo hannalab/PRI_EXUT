@@ -6,6 +6,10 @@
 # expression of every gene is computed separately in PRI_ExUt and InUt/PSI_ExUt
 # cells.Genes are plotted as PRI_ExUt vs InUt (one panel per cluster), and the
 # Pearson correlation (R) between the two conditions is reported per cluster.
+#
+# R 4.3.1
+# Written by Dr. Noa Novershtern 
+# https://github.com/hannalab/PRI_EXUT
 # =============================================================================
 WORKING_DIR = "<Enter path here>" 
 setwd(WORKING_DIR)
@@ -51,8 +55,6 @@ plot_data <- mean_expr %>%
   tidyr::pivot_longer(cols = all_of(genes), names_to = "gene", values_to = "mean_exp") %>%
   tidyr::pivot_wider(names_from = type, values_from = mean_exp)
 
-#plot_data
-
 # ---- Pearson correlation between conditions, per cluster ----
 r_labels <- plot_data %>%
   group_by(seurat_clusters) %>%
@@ -63,11 +65,10 @@ r_labels <- plot_data %>%
   ) %>%
   mutate(label = paste0("R = ", round(r, 3)))
 
-write.csv(r_labels,"correlation_R.csv")
 
 # ---- Scatter plot: one panel per cluster, background shaded by R ----
 # Get ct categories for faceting
-#p <- ggplot(plot_data, aes(x = PRI_ExUt, y = InUt)) +
+#ggplot(plot_data, aes(x = PRI_ExUt, y = InUt)) +
 ggplot(plot_data, aes(x = PRI_ExUt, y = PSI_ExUt)) +
   
   # background rectangle per facet, colored by R
