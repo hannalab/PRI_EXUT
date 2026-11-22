@@ -17,7 +17,7 @@ set.seed(42)
 
 # ── Paths ─────────────────────────────────────────────────────────────────────
 WORKING_DIR <- "<enter your working directory here>"
-DATA_DIR    <- "<path>/E75/outs/count/filtered_feature_bc_matrix/"
+DATA_DIR    <- "<path>/E95/outs/count/filtered_feature_bc_matrix/"
 OUT_RDS      <- file.path(WORKING_DIR, "combined_E95_dataset.rds")
 
 setwd(WORKING_DIR)
