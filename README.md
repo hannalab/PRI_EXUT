@@ -43,7 +43,6 @@ Edit the `<path>` placeholders and `WORKING_DIR` at the top of each script befor
 | `Sample_distance_heatmap_clean.R` | Heatmap of sample distances in PCA space for the integrated E4.5 datasets (ED Fig. 7b). |
 | `Epiblast_progression_clean.R` | Compares epiblast module scores across three time points in utero (Cao et al) and ex utero (this study) (ED Fig. 7c). |
 | `Epiblast_heatmap_clean.R` | Heatmap of selected diapause genes across samples of the integrated E4.5 datasets (Fig. 1j, ED Fig. 8). |
-
 | `seurat_analysis_E75_clean.R` | E7.5 UMAPs, clustering-resolution tree, marker dot plot and cluster-composition bar plots. (Fig. 2e-f, ED Fig. 9a-b)|
 | `seurat_analysis_E85_clean.R` | E8.5 UMAPs, clustering-resolution tree, marker dot plot and cluster-composition bar plots. (Fig. 3g-h, ED Fig. 12a-d)|
 | `seurat_analysis_E95_clean.R` | E9.5 UMAPs, marker dot plot and cluster-composition bar plots. (Fig. 4e-f, ED Fig. 13a,c) |
