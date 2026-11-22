@@ -20,7 +20,7 @@ setwd(WORKING_DIR)
 source("E75_colors.R")
 
 ## ---- Load data --------------------------------------------------------------
-E75.sub <- readRDS("combined_E75_dataset.rds")
+E75.sub <- readRDS("data/combined_E75_dataset.rds")
 
 ## Clustering at resolution 0.5 is used throughout
 E75.sub$seurat_clusters <- E75.sub$integrated_snn_res.0.5
