@@ -1,4 +1,4 @@
-# PRI_EXUT
+# Ex utero development of mouse embryos from fertilization to mid-gestation
 
 Analysis code for the single-cell RNA-seq data in:
 
