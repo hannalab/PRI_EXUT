@@ -1,5 +1,5 @@
 # =============================================================================
-# Neuro-mesodermal lineage (ED Fig. d-e)
+# Neuro-mesodermal lineage (ED Fig. 13 d-e)
 #
 # Subsets the combined all-time-point dataset to epiblast, neural and
 # mesodermal cell types, recomputes PCA/UMAP/clusters on the subset, assigns
