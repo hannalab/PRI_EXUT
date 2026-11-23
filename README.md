@@ -49,6 +49,7 @@ Edit the `<path>` placeholders and `WORKING_DIR` at the top of each script befor
 | `E75_scatterplot_clean.R` | Per-cluster scatter plots and Pearson R of mean gene expression between PRI_ExUt and control at E7.5 (ED Fig. 10). |
 | `E85_scatterplot_clean.R` | Per-cluster scatter plots and Pearson R of mean gene expression between PRI_ExUt and control at E8.5 (ED Fig. 10). |
 | `E95_scatterplot_clean.R` | Per-cluster scatter plots and Pearson R of mean gene expression between PRI_ExUt and InUt at E9.5 (ED Fig. 10). |
+| `Neuromesodermal_lineage_clean.R` | Subsets the combined all-time-point dataset and plot UMAP of Neuro-mesodermal cells only. (ED Fig. 13d-e) | 
 
 **Helper files**
 
