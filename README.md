@@ -19,10 +19,13 @@ External datasets: Bedzhov (Chen et al., https://doi.org/10.1016/j.stem.2024.06.
 Edit the `<path>` placeholders and `WORKING_DIR` at the top of each script before running. Processed objects are read from / written to `data/`.
 
 ## Workflow
-
-1. `read_*_dataset_clean.R` builds a Seurat object per time point from the Cell Ranger output.
-2. `seurat_analysis_*_clean.R` produces the UMAP, dot plot and composition figures.
-3. The remaining scripts produce the comparison figures and can run once the objects from steps 1–2 exist.
+1. Run CellRanger command to collect counts per sample:
+cellranger count --id <sample_name> --fastqs <path_to_fastq_dir> --create-bam false --sample <sample_name> --transcriptome refdata-cellranger-mm10-3.0.0 --include-introns true
+Aggregate samples:
+cellranger aggr --id <out_dir_name> --csv <sample_list>.csv --normalize=mapped
+2. `read_*_dataset_clean.R` builds a Seurat object per time point from the Cell Ranger output.
+3. `seurat_analysis_*_clean.R` produces the UMAP, dot plot and composition figures.
+4. The remaining scripts produce the comparison figures and can run once the objects from steps 1–2 exist.
 
 ## Files
 
